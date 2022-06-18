@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: hsl(0, 100%, 74%) url("images/bg-intro-desktop.png") fixed;
+  color: hsl(0, 0%, 99%);
+  font-size: 16px;
+}
+
+main {
+  display: grid;
+  margin: auto;
+  width: 70%;
+  grid-template-areas:
+    "a b"
+    "a c";
+  gap: 15px;
+  margin-top: 100px;
+  padding: 30px;
+  /* padding-top: 20px;
+  padding-bottom: 80px; */
+}
+
+h2 {
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+
+.box1 p {
+  line-height: 30px;
+  font-size: 15px;
+}
+
+.box1 {
+  grid-area: a;
+  padding: 10px;
+  /* background-color: bisque; */
+  /* padding-top: 50px; */
+  margin: auto;
+}
+
+.box2 {
+  background-color: hsl(248, 32%, 49%);
+  grid-area: b;
+  text-align: center;
+  font-size: 13px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 6px rgba(49, 49, 49, 0.377);
+}
+
+.box3 {
+  background-color: white;
+  grid-area: c;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 1px 6px rgba(49, 49, 49, 0.377);
+}
+
+input {
+  padding: 15px;
+  margin: 10px;
+  width: 80%;
+}
+
+button {
+  background-color: hsl(154, 59%, 51%);
+  color: hsl(0, 0%, 100%);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border-color: hsl(154, 59%, 51%);
+  /* border: 5px hsl(154, 59%, 51%); */
+  width: 87%;
+}
+
+.box3 p {
+  color: hsl(246, 25%, 77%);
+  font-size: 10px;
+}
+
+.st {
+  color: hsl(0, 100%, 74%);
+}
+
+@media screen and (max-width: 1440px) {
+  body {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    font-size: 16px;
+    background: hsl(0, 100%, 74%) url("images/bg-intro-mobile.png") fixed;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+    margin-top: 40px;
+    padding: 30px;
+    padding-bottom: 60px;
+  }
+  h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  p {
+    text-align: center;
+    padding: 1px 20px;
+  }
+  .box2 {
+    background-color: hsl(248, 32%, 49%);
+    text-align: center;
+    font-size: 13px;
+    padding: 10px 2px;
+    border-radius: 10px;
+    box-shadow: 1px 6px rgba(49, 49, 49, 0.377);
+  }
+  .box2 p {
+    text-align: center;
+    font-size: 13px;
+    padding: 20px;
+    margin: 0px 50px;
+    line-height: 25px;
+  }
+}
